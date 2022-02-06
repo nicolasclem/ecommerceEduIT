@@ -1,0 +1,87 @@
+.section-tabla{
+
+    table {
+        width: 95%;
+        margin: 10px auto;
+        padding: 8px;
+        font-family: 'helvetica neue', helvetica, arial, sans-serif;
+    }
+
+    th {
+        font-style: italic;
+        text-align: center;
+        padding: 8px;
+    }
+    td{
+        text-align: center;
+        padding: 2px;
+    }
+    tr:nth-child(odd) {
+        background-color: rgb(153, 204, 248);
+    }
+    tr:nth-child(even) {
+        background-color: rgb(201, 229, 253);
+    }
+    button.btn__actualizarTabla{
+        margin: 15px;
+        width: 80px;
+        height: 35px;
+        font-size: 1em;
+        transition-duration: 0.8s;
+        border: none; 
+        border-radius: 2px;       
+        background-color: #1ea9cc;
+        color:whitesmoke;
+        cursor: pointer;
+        
+    }
+    button.btn__hidden{
+        display: none;
+    }
+    button.btn__actualizarTabla:hover{
+        border:1px solid #55c0da;
+        background-color: transparent;
+        color: rgb(65, 64, 64);
+    }
+    button.btn__borrarTabla{
+        margin: 15px;
+        width: 80px;
+        height: 35px;
+        font-size: 1em;
+        transition-duration: 0.4s;
+        border: none;
+        border-radius: 2px;
+        background-color: #Dc262c;
+        color:whitesmoke;
+        cursor: pointer;
+
+    }
+    button.btn__borrarTabla:hover{
+        border:1px solid #Dc262c;
+        background-color: transparent;
+        color: rgb(65, 64, 64);
+    }
+    button.btn__info{
+        margin: 5px;
+        padding: 2px;
+        width: 20px;
+        height: 15px;
+        transition-duration: 0.4s;
+        border-radius: 2px;
+        border: none;
+        background-color: transparent;
+        color:rgb(97, 96, 96);
+        cursor: pointer;
+
+    } 
+    button.btn__info:hover{
+        color: rgb(22, 22, 22);
+    }
+    .img_tabla{
+        transition: all 500ms;
+    }
+    .img_tabla:hover{
+
+        transform: scale(1.10);
+    }
+}

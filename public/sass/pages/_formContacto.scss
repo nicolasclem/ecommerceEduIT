@@ -1,0 +1,116 @@
+
+
+#faqs{
+    margin: 10px 100px;
+    padding: 20px;
+    width: 40%;
+    border-radius: 4px;
+    background-color: whitesmoke;
+}
+.area-contacto{
+    display: flex;
+    margin: 10px 5px;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    margin: 100px;
+    border-radius: 4px;
+    background-color: transparent;
+    @media(max-width: 768px){
+        .dpool{
+            display: none;
+        }
+    }
+}
+
+.form-contacto{
+    width: 40%;
+    & label span{
+    padding: 6px;    
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+&__email,	& textarea,&__name	{
+    
+    font-size:16px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:50%;
+    outline: none;
+    border:none;
+    border-radius: 1px;
+    background-color: rgb(214, 231, 255);
+}
+    &__name:focus ~.barra-name{
+    width:50%
+    }
+    &__email:focus ~.barra-email{
+        width:50%
+    }
+    &__descripcion:focus ~.barra-description{
+        width:50%
+    }
+
+    @media(max-width: 768px){
+        width: 100% 
+    }
+}
+
+
+.barra-name ,.barra-email,.barra-description {
+    position:relative;
+    display:block; 
+    width: 30%;
+    height: 0.5px;
+    background-color: darkgray;    
+    transition: all 1s ease;
+}
+.btn-send__contacto{
+    
+    background-color: transparent;
+    font-size:20px;
+    margin-top: 20px;
+    border-radius: 3px;
+    padding: 6px;
+    outline: none;    
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+
+.btn-send__contacto:hover,.btn-send__contacto:focus{
+
+    box-shadow: 3px 2px 5px rgb(41, 41, 41,0.2);
+    color:rgba(95, 95, 185, 0.815) ;
+    
+} 
+
+.dpool{
+    
+    
+    & img{  
+        width: 50%;
+        
+    }
+    
+    padding: 10px;
+}
+
+
+.dark {
+    position:relative;
+    top: -25px;
+    border-bottom:solid 8px black;
+    width:60%;
+    height:1px;
+    z-index: -1;
+    border-radius: 2px;
+}    
+
+.msjValidadorEmail, .msjValidadorName , .msjValidadorDescrip{
+    visibility: hidden;
+    color: lightcoral;
+    font-size: 14px;
+    margin: 2px;
+}

@@ -1,0 +1,49 @@
+
+
+.main-footer{
+    display: flex;
+    gap: 4em;
+    height:120px;
+    background-color:rgb(55, 125, 250);
+    border-radius: 2px;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+    position: sticky;
+	top: 0;
+    color:white;
+    font-weight: bold;
+
+}
+
+.us  ul li {
+    list-style-type: none;
+    margin: 15px;
+    & a{
+        color:white;
+        text-decoration: none;
+        
+        }
+    }
+
+
+.client  ul li {
+    list-style-type: none;
+    margin:15px;
+    & a{
+        color:white;       
+        text-decoration: none;
+        
+    }
+}
+
+.social ul li {
+    list-style-type: none;
+    
+    & a i{  
+        color:white;
+        font-size: 25px;
+        margin: 12px;
+        
+        }
+    }

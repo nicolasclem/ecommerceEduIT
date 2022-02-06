@@ -1,0 +1,103 @@
+<section class="section-alta">
+        
+    <form action="#" method="GET" class="form-alta">
+        <h2>Nuevo Producto</h2>
+        <div>
+            <label for="name_products" class="lbl-name__products">
+                <span>Nombre</span> 
+            </label>
+                <input type="text" id="name_products"    name="name_products" class="form-alta__name_products">
+                <div class="form-alta__msjerror"></div>
+        </div>
+        <div>
+                <label for="brand_products" class="lbl-brand__products">
+                    <span>Marca</span> 
+                </label>
+                    <input type="text" id="brand_products"    name="brand_products" class="form-alta__brand_products">
+                    <div class="form-alta__msjerror"></div>
+                </div>
+        <div>
+            <label for="precio_products" class="lbl-precio__products">
+                <span>Precio</span>
+            </label>
+                <input type="number" id="precio_products" name="precio_products" class="form-alta__precio_products">
+                <div class="form-alta__msjerror"></div>
+        </div> 
+        <div>
+                <label for="stock_products" class="lbl-stock__products">
+                    <span>Stock</span>
+                </label>
+                    <input type="number" id="stock_products" name="stock_products" class="form-alta__stock_products">
+                    <div class="form-alta__msjerror"></div>
+        </div>
+        <div>
+        <label for="description_products" class="lbl-description_products">
+            <span>Descripcion de producto:</span>
+        </label>
+            <textarea name="description_products" id="description_products" cols="20" rows="5" class="form-alta__description_products"></textarea>
+            <div class="form-alta__msjerror"></div>
+        </div>
+
+
+        <!-- <div class="form-alta__category">
+            <label for="category" class="form-alta__category__lbl">
+            <select id="category" name="cateogry" class="form-alta__category__select">
+                <option value="" disabled selected>Selecciona categoria</option>
+                <option value="1">DC</option>
+                <option value="2">MARVEL</option>
+                <option value="3">Independiente</option>
+            </select>  
+            </label> 
+            <div class="form-alta__msjerror"></div> 
+        </div> -->
+        <div id="drop-area">
+            <p>Subir Imagen </p>
+            <br>
+
+            <input id="foto" type="file" accept="image/*" onchange="formularioAlta.handleFiles(this.files)">
+            
+            <label class="buttonFile" for="foto">Examinar...</label>
+            <br>
+            <br>
+            <progress id="progress-bar" max="100" value="0"></progress>
+            <div id="gallery"><img src="" alt=""></div>
+        </div>   
+        <!-- <div style="margin: 25px 5px"class="form-alta__archivo">
+            <label  for="foto" class="lbl-brand__products" >
+                <span>Cargar archivo</span> 
+            </label>
+            <input type="text" name="foto"  id="foto" class="form-alta__brand_products" placeholder="Nombre de la imagen">
+            <!-- <input type="file" id="foto" name="foto" class="form-alta__file"> -->
+
+        <!-- <div></div>  -->
+            </div>
+        <div class="form-alta__entrega">
+            <input type="checkbox" id="envio" name="envio" value="si">
+            <label class="form-alta__envio" for="envio">Envío sin cargo</label>
+            <div class="form-alta__msjerror"></div>
+        </div>
+        <div class="form-alta__crear">
+        <button class="btn-alta__products">Crear  </button>  
+        </div>
+    </form>
+    <div class="swall">
+        <img src="img/svg/swall.png" alt="escudo en pared">
+    </div>
+</section>
+
+<div class="producto-detalle">
+    <div class="producto-detalle__container"></div>
+</div>
+
+<section class="tabla-productos">
+    <h1>Productos Creados</h1>
+    
+    <div class="section-tabla" id="productos-creados-tres"></div>
+</section>
+
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/alta.js"></script>
+     -->

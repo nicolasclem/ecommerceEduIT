@@ -1,0 +1,130 @@
+
+
+/*****************************
+HEADER
+******************************/
+
+.main-header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 3px;
+    background-color:rgb(55, 125, 250);
+    border-radius: 2px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+    position: sticky;
+	top: 0;
+
+}
+
+/******************************
+NAVBAR
+*******************************/
+.nav-bar{
+    
+    display: flex;
+    padding: 5px;
+    &__nav-list{        
+        display: flex;
+        list-style-type: none;
+    }
+
+    &__nav-item{
+        height: 100%;
+        gap: 0.5rem;
+        padding: 10px;
+
+        
+        
+    }
+    &__nav-link{
+        font-size: 1.5em;        
+        color: white;
+        text-decoration: none;
+        
+    }
+
+    &__nav-item:hover{
+        background-color:rgb(85, 140, 260) ;
+        clip-path: polygon(10% 5%, 100% 5%, 91% 93%, 0 93%);
+    }
+
+   
+    
+}
+.search-bar{
+    
+    &__btn{
+        background-color:transparent;
+        outline: none;
+        border:none;
+        color: white;
+        & i{     
+        
+            cursor: pointer;
+            background-color:transparent;
+            padding: 5px;
+            font-size: 1.2em;
+    
+        }
+    }
+    &__form-search{
+        padding: 2px;
+        width: 80%;
+        outline: none;
+        border: none;
+        border-bottom: solid 2px black;
+        border-radius: 2px;
+    }
+    @media(max-width:768px){
+        display: none;
+    }
+    
+
+}
+
+.cart-btn{
+    background-color:transparent;
+    outline: none;
+    border:none;
+    color: white;
+    & i {
+        cursor: pointer;
+        padding: 5px;
+        font-size: 1.5em;
+    }
+
+}
+
+
+
+/*************************
+LOGO
+***************************/
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    & img{
+    
+    height: 4em;
+    cursor: pointer;
+}
+
+}
+
+
+.active{
+    font-weight: bold;
+}
+.logo-cart-search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:1em;
+}

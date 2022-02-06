@@ -1,0 +1,24 @@
+.section-cards{
+
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.recomendado{
+    background-image: url("../img/bg/fondo1.jpg");    
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 2px 1px 5px  black;
+
+    & h2{
+        color: white;        
+        font-weight: bold;
+    }
+
+
+}
+

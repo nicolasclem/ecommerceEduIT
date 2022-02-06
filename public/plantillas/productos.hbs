@@ -1,0 +1,49 @@
+
+<table>
+
+        <tr>
+            <th>Nombre</th>
+            <th>Marca</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Detalle</th>
+            {{!-- <th>Categoria</th> --}}
+            <th>Foto</th>
+            <th>Envio</th>
+            <th>Accion</th>
+        </tr>
+        {{#each productos }}
+        <tr>
+            <td>{{name_products}}</td>
+            <td>{{brand_products}}</td>
+            <td>$ {{precio_products}}</td>
+            <td>{{stock_products}}</td>
+            <td>{{description_products}}</td>
+            {{!-- <td>{{category }}</td> --}}
+            <td>
+                <img style="display:block; margin: 0 auto;" src="{{foto}}" width="50" alt="{{nombre}}" class="img_tabla"> 
+            </td>
+            <td>
+                {{#if envio}}
+                    <i class="fas fa-check" style="color:rgb(4, 196, 4)"></i>
+                {{else}}
+                    <i class="fas fa-times" style="color: red"></i>
+
+
+                {{/if}}
+            </td>
+             <td>
+                    {{#if ../validos}}
+                        <button class="btn__actualizarTabla" onclick="productoController.actualizarProducto('{{id}}')">Editar</button>
+                    {{else}}
+                        <button  class="btn__hidden"  onclick="productoController.actualizarProducto('{{id}}')" >Editar</button>
+                    {{/if}}
+                    <button class="btn__borrarTabla"  onclick="productoController.borrarProducto('{{id}}')">Eliminar</button>
+                    {{!-- <button class="btn__info"  onclick="detalle('{{_id}}'')"><i class="fas fa-plus"></i></button> --}}
+                </td>
+        </tr>
+        {{/each}}
+
+</table>
+
+

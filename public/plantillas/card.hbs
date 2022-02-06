@@ -1,0 +1,41 @@
+
+{{#if listado.length }}
+{{#each listado}}
+<article class="card__article">
+<div class="card__image">
+        
+        <img src="{{foto}}" alt="Productos Comics">
+    </div>
+    <div class="card__content">
+        <div class="card__name">
+            <h3 class="card__heading">{{name_products}}</h3>
+            <span><i class="fas fa-tag"></i>
+                {{brand_products}}
+                {{!-- {{#ifeq category "1"}} 
+                    DC 
+                {{/ifeq}}
+                {{#ifeq category "2"}} 
+                MARVEL
+                {{/ifeq}}
+                {{#ifeq category "3"}} 
+                Independiente
+                {{/ifeq}} --}}
+            </span> 
+        </div>
+       
+        <div class="card__price">
+            <p> $ {{precio_products}}</p>
+        </div>
+        
+        <div class="card__btn">
+            <button type="button" onclick="agregarCarrito(event,'{{id}}',this)"><i class="fas fa-shopping-cart"></i>Comprar</button>
+        </div>
+    </div> 
+    </article>
+   {{/each}}
+{{else}}
+{{/if}}
+
+
+
+

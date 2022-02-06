@@ -1,0 +1,32 @@
+[
+	{
+		"nombre": "auto",
+		"description": "4x4",
+		"precio": 321,
+		"id": "6"
+	},
+	{
+		"nombre": "auto",
+		"description": "4x4",
+		"precio": 321,
+		"id": "6"
+	},
+	{
+		"nombre": "auto",
+		"description": "4x4",
+		"precio": 321,
+		"id": "6"
+	},
+	{
+		"nombre": "auto",
+		"description": "4x4",
+		"precio": 321,
+		"id": "6"
+	},
+	{
+		"nombre": "auto",
+		"description": "4x4",
+		"precio": 321,
+		"id": "6"
+	}
+]
